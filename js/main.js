@@ -4,8 +4,8 @@
 		var projects = [];
 		
 		$.ajax({
-			dataType: "json",
-			url: "projects_static.php",
+			dataType: "jsonp",
+			url: "https://source-dev.mozillalabs.com/en-US/code/json",
 		})
 		.done(function(data) {
 			projects = data.objects;
